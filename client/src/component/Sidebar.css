@@ -1,0 +1,15 @@
+/* Move sidebar to right side */
+.custom-sidebar {
+  position: fixed !important;
+  top: 0;
+  right: -250px; /* hidden initially */
+  width: 250px;
+  height: 100%;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+/* When visible */
+.custom-sidebar.visible {
+  right: 0;
+}
